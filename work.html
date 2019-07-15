@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+/*1.下载浏览器测量像素的插件*/
+/*2.使用动画 （js实现动画，css3实现动画）*/
+/*- 一个是帧动画  一个是补间动画*/
+/*- 什么是帧动画：使用定时器 每隔一段时间 更改当前元素的状态*/
+/*- 什么是补间动画：过渡(加过渡只要状态发生改变产出动画) 动画（多个节点来控制动画） 性能会更好*/
+/*- 在支持H5C3的的浏览器尽可能使用css3动画 （移动端开发）*/
+/*- transition  animation*/
+/*- transition  组合写法（transition:all 1s linear 1s）*/
+/*的拆分写法 transition-property  transition-duration transition-timing-function transition-delay*/
+/*3.background: url("../cart/images/06-bg.png") no-repeat 25% bottom / 1200px 300px;*/
+/*1.背景图的百分比不是按照容器的大小去换算的  注意：：：*/
+/*2.百分比的背景定位：基于  容器的宽度-背景的宽度  */
+/*3.计算公式  背景的x的定位 = （容器的宽度-背景的宽度 ）* 百分比*/
+</style>
+<style>
+    .box:first-child{
+        /*border-image: url("images/border01.jpg") 167/20px round;*/
+        /*1.在内容变化的容器可以使用，边框自动填充*/
+        /*2.用法：*/
+        /*2.1 图片资源*/
+        border-image-source: url("images/border01.jpg");
+        /*2.2 切割的尺寸 默认的单位px 而且不能使用小数*/
+        /*2.2.1 切割的位置距离对应的边的距离  切了四刀   4个切割的尺寸*/
+        border-image-slice: 167;/*167 167 167 167*/
+        /*2.3 边框的宽度*/
+        border-image-width: 20px;
+        /*2.4 平铺的方式  三种平铺方式 round stretch repeat*/
+        /*round 环绕 完整的自适应（等比缩放）平铺在边框内*/
+        /*stretch 拉伸 拉伸显示在边框内容 变形的*/
+        /*repeat 平铺 从边框的中间向两侧平铺 自适应平铺但是不是完整的*/
+        border-image-repeat: round;
+
+    }
+</style>
+<style>
+   /* 此项目的感悟
+    1.点样式的时候，一般的类选择器留个空格再点--如 .screen01 .sofa
+    直接不留空格 样式实现不了
+    2.点js添加的类的时候， 不能留空格-紧贴  如 .screen01.new .sofa
+    3.对跨屏幕动画的总结
+    一种css直接的动画实现
+    一种利用JS进行
+
+
+
+
+
+    */
+</style>
+</body>
+</html>
