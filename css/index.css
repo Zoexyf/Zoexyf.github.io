@@ -260,7 +260,7 @@
 .screen04 .cloud{
     position: absolute;
     left: -400px;
-    top: -50px;
+    top: -70px;
     animation: cloud04 20s linear infinite alternate;
 }
 @keyframes cloud04 {
@@ -273,7 +273,8 @@
 }
 .screen04 .text{
     text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
+    /* z-index:999; */
 }
 .screen04 .text img:last-child{
     position: absolute;
